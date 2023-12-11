@@ -1,0 +1,17 @@
+.menubgimg {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/images/menuimg.jpg");
+  background-attachment: fixed !important;
+}
+
+.heddinggg {
+  font-family: "Roboto Condensed", sans-serif;
+  /* padding-top: 0%; */
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: 100px;
+}
