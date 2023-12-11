@@ -7,7 +7,8 @@ const Home = () => {
         <h1 className="heddinggg self-center ">Menu</h1>
       </div> 
 
-      <div className="">
+      <div className="card ">
+        <h6>coffee</h6>
 
       </div>
     </>
