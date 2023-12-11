@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from './components/shared/Header'
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import Home from './pages/Home';
+import Footer from './components/shared/Footer';
 
 
 
@@ -14,6 +15,7 @@ function App() {
      <BrowserRouter>
      <Routes>
       <Route path="/" element={<Home/>}/>
+      <Route path="/footer" element={<Footer/>}/>
 
      </Routes>
      </BrowserRouter>
