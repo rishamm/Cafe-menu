@@ -10,10 +10,11 @@ const Home = () => {
       <Banner/>
       
 
-      <Footer/>
+     
 
       <Card menu={menu}/>
       <Card menu={menu}/>
+      <Footer/>
     </>
   );
 };
