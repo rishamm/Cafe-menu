@@ -14,6 +14,7 @@ const Home = () => {
 
       <Card menu={menu}/>
       <Card menu={menu}/>
+      
       <Footer/>
     </>
   );
