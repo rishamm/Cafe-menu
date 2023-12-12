@@ -10,7 +10,7 @@ const Card = ({menu,Heading}) => {
       <div className="text-black  h-full grid grid-cols-2 gap-5 text-white py-7 px-4 ">
         {menu.map((item, id) => (
           <>
-            <div className="border border-black rounded-md pl-3 pr-2 items-center py-5 flex  justify-between" key={id}>
+            <div className="border border-black text-black rounded-md pl-3 pr-2 items-center py-5 flex  justify-between" key={id}>
               {item.data}
               <IoIosArrowForward />
             </div>
