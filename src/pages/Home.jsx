@@ -8,12 +8,11 @@ const Home = () => {
   return (
     <>
       <Banner/>
-      
-
-     
-
-      <Card menu={menu}/>
-      <Card menu={menu}/>
+      <div className="pb-20 pt-10">
+      <Card menu={menu} heading={"Drinks"} />
+      <Card menu={menu} heading={"Burgers" } />
+      <Card menu={menu} heading={"Mocktails" } />
+      </div>
       <Footer/>
     </>
   );

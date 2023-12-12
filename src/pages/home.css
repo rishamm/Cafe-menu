@@ -1,11 +1,27 @@
-.menubgimg {
-  width: 100%;
-  height: 250px;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../assets/images/menuimg.jpg");
-  background-attachment: fixed !important;
+
+@media (min-width:729px){
+  .menubgimg {
+    width: 50px;
+    height: 350px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/mobile.jpg");
+    background-attachment: fixed !important;
+  }
 }
+@media (max-width:728px) {
+  .menubgimg2 {
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/images/menuimg.jpg");
+    background-attachment: fixed !important;
+  }
+}
+
 
 .heddinggg {
   font-family: "Roboto Condensed", sans-serif;

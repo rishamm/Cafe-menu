@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../assets/header/logo1.jpg'
+import logo from '../../assets/footer/footer_logo.png'
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiOutlineFacebook } from "react-icons/ai";
@@ -8,8 +8,8 @@ import { AiOutlineFacebook } from "react-icons/ai";
 function Footer() {
   return (
     <>
-      <footer className="bg-gray-800 text-white py-5">
-        <div className="container mx-auto flex justify-between items-center flex-wrap">
+      <footer className="  bg-gray-800 text-white py-5 ">
+        <div className=" container  mx-auto   sm:px-4 px-4 flex justify-between items-center flex-wrap">
           <div className="footer-logo">
             <img src={logo} alt="Coffee Shop Logo" className="w-40 h-[85%] object-cover mb-2" />
           </div>

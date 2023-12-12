@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import logo from '../../assets/header/logo1.jpg'
+import logo from '../../assets/header/logo1.png'
 import { LuShoppingCart } from "react-icons/lu";
 
 const Header = () => {
@@ -15,7 +15,7 @@ const Header = () => {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
-                <img src={logo} className="logodesign w-40 h-[85%] object-cover"/>
+                <img src={logo} className="logodesign w-40 sm:h-[62px] h-[63px] object-cover"/>
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 {/* <div className="flex space-x-4">
