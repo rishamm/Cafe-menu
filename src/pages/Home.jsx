@@ -12,8 +12,8 @@ const Home = () => {
 
      
 
-      <Card menu={menu}/>
-      <Card menu={menu}/>
+      <Card menu={menu} Heading={"Drinks"}/>
+      <Card menu={menu} Heading={"Starters"}/>
  
     </>
   );

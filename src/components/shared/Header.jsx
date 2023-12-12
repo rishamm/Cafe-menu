@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import logo from '../../assets/header/logo1.jpg'
+import logo from '../../assets/header/logo1.png'
 import { LuShoppingCart } from "react-icons/lu";
 import { useNavigate } from "react-router-dom";
 
@@ -18,8 +18,8 @@ const Header = () => {
               
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex flex-shrink-0 items-center" onClick={()=>{console.log("clicked");navigate('/cart')}}>
-                <img src={logo} className="logodesign w-40 h-[85%] object-cover" />
+              <div className="flex flex-shrink-0 items-center" >
+                <img src={logo} className="logodesign w-40 sm:h-[85%] h-[62px] object-cover" onClick={()=>{navigate('/')}} />
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 {/* <div className="flex space-x-4">
@@ -36,7 +36,7 @@ const Header = () => {
                 type="button"
                 className="relative   p-1 text-gray-400 hover:text-black focus:outline-none "
               >
-                <LuShoppingCart className="text-[25px]" />  
+                <LuShoppingCart className="text-[25px]" onClick={()=>{console.log("clicked");navigate('/cart')}} />  
               </button>
 
               {/* <!-- Profile dropdown --> */}
