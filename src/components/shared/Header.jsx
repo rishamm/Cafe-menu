@@ -2,10 +2,14 @@ import React from "react";
 import "./Header.css";
 import logo from '../../assets/header/logo1.jpg'
 import { LuShoppingCart } from "react-icons/lu";
+import { useNavigate } from "react-router-dom";
+
 
 const Header = () => {
+  const navigate= useNavigate()
+
   return (
-    <>
+    <>  
       <nav className="bg-light-800">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
@@ -14,8 +18,8 @@ const Header = () => {
               
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-              <div className="flex flex-shrink-0 items-center">
-                <img src={logo} className="logodesign w-40 h-[85%] object-cover"/>
+              <div className="flex flex-shrink-0 items-center" onClick={()=>{console.log("clicked");navigate('/cart')}}>
+                <img src={logo} className="logodesign w-40 h-[85%] object-cover" />
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 {/* <div className="flex space-x-4">
