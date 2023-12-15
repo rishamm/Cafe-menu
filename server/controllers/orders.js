@@ -13,7 +13,7 @@ exports.placeOrder = async (req, res) => {
                 isActive
             }
         ).save();
-        return res.status(200).json({ message: "success" });
+        return res.status(201).json({ message: "success" });
     } catch (error) {
         return res.status(500).json({ message: error.message });
     }
@@ -29,12 +29,12 @@ exports.completeOrder = async (req, res) => {
     }
 }
 
-exports.getTableDataByNumber = async (req, res) => {
-    const tableNumber = req.params;
+exports.getTableDataByUserId = async (req, res) => {
+    const userId = req.params;
     try {
-        const table = await Orders.findOne({ tableNumber });
+        const table = await Orders.findOne({ user: userId });
         if (table.isActive) {
-            return res.status(200).json({ data: table });
+            return res.status(200).json({ message: "success", data: table });
         }
         return res.status(200).json({ message: "success", data: null });
     } catch (error) {

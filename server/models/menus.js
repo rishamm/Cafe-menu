@@ -8,8 +8,10 @@ const menuSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Category'
     },
+    description: String,
     price: Number,
     quantity: Number,
+    estimatedTime: Number,
     images: {
         type: Array
     },

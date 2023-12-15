@@ -3,8 +3,11 @@ const Schema = mongoose.Schema
 
 const categorySchema = new Schema({
 
-    category: String,
-    isDeleted: Boolean
+    name: String,
+    isDeleted: {
+        type: Boolean,
+        default: false
+    }
 
 })
 module.exports = mongoose.model('Category', categorySchema);

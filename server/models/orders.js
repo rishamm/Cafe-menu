@@ -3,8 +3,9 @@ const ObjId = mongoose.Schema.ObjectId;
 
 const orderSchema = mongoose.Schema({
     tableNumber: String,
-    name: {
-        type: String,
+    user: {
+        type: ObjId,
+        ref: "Users"
         // required: [true, "Name is required"]
     },
     items: [{
@@ -41,21 +42,6 @@ const orderSchema = mongoose.Schema({
         type: Boolean,
         default: true
     }
-
-    // lastName: {
-    //     type: String,
-    //     required: [true, "Last Name is required"]
-    // },
-    // userName: {
-    //     type: String,
-    //     required: [true, "User Name is required"],
-    //     unique: true
-    // },
-    // password: {
-    //     type: String,
-    //     required: [true, "Password is required"],
-    //     // select: false
-    // }
 },
     {
 
